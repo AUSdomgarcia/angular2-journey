@@ -1,0 +1,19 @@
+<h1>{{artist.name}}</h1>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img [src]="artist.image">
+      <div class="caption">
+        <table class="table">
+          <tr *ngFor="let album of artist.albums">
+            <td>
+              <a>{{album.title}}</a>
+            </td>
+            <td>{{album.year}}</td>
+          </tr>
+        </table>
+        <div [innerHTML]="artist.description"></div>
+      </div>
+    </div>
+  </div>
+</div>

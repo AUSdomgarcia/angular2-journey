@@ -1,0 +1,12 @@
+<h1>{{album.title}}</h1>
+<p><a>{{album.artist.name}}</a>, {{album.year}}</p>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img [src]="album.image">
+      <div class="caption">
+        <div [innerHTML]="album.description"></div>
+      </div>
+    </div>
+  </div>
+</div>

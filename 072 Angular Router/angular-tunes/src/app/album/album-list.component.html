@@ -1,0 +1,10 @@
+<h1>Albums</h1>
+<table class="table">
+  <tr *ngFor="let album of albums">
+    <td>
+      <a>{{album.title}}</a>
+    </td>
+    <td>{{album.year}}</td>
+    <td>{{album.artist}}</td>
+  </tr>
+</table>
